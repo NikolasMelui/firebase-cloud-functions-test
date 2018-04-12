@@ -6,7 +6,7 @@ import * as functions from 'firebase-functions';
 export const sayThis = functions.https.onRequest((request, response) => {
 	let responseStrign = '';
 	const queryStringObject = request.query;
-	Object.keys(queryStringObject).forEach(key => (responseStrign += `${key} => ${queryStringObject[key]}`));
+	Object.keys(queryStringObject).forEach(key => (responseStrign += `<p>${key} => ${queryStringObject[key]}</p>`));
 	console.log(responseStrign);
 	response.send(responseStrign);
 });
