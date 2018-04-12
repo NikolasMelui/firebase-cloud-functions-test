@@ -3,9 +3,10 @@ import * as functions from 'firebase-functions';
 // Start writing Firebase Functions
 // https://firebase.google.com/docs/functions/typescript
 
-export const helloWorld = functions.https.onRequest((request, response) => {
-	const username = 'Rinat';
-	const greeter = thisusername => `Hello, ${thisusername}`;
-	console.log(greeter(username));
-	response.send(greeter(username));
+export const sayThis = functions.https.onRequest((request, response) => {
+	let responseStrign = '';
+	const queryStringObject = request.query;
+	Object.keys(queryStringObject).forEach(key => (responseStrign += `${key} => ${queryStringObject[key]}`));
+	console.log(responseStrign);
+	response.send(responseStrign);
 });

@@ -1,0 +1,18 @@
+[debug] [2018-04-12T14:00:19.289Z] ----------------------------------------------------------------------
+[debug] [2018-04-12T14:00:19.291Z] Command:       /Users/nikolasmelui/.nvm/versions/node/v9.6.1/bin/node /Users/nikolasmelui/.nvm/versions/node/v9.6.1/bin/firebase deploy
+[debug] [2018-04-12T14:00:19.291Z] CLI Version:   3.18.2
+[debug] [2018-04-12T14:00:19.291Z] Platform:      darwin
+[debug] [2018-04-12T14:00:19.291Z] Node Version:  v9.6.1
+[debug] [2018-04-12T14:00:19.291Z] Time:          Thu Apr 12 2018 18:00:19 GMT+0400 (+04)
+[debug] [2018-04-12T14:00:19.291Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-12T14:00:19.302Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-12T14:00:19.303Z] > authorizing via signed-in user
+[debug] [2018-04-12T14:00:19.304Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-cloud-functions-test-d1dbe  
+  
+ Thu Apr 12 2018 18:00:19 GMT+0400 (+04)
+[debug] [2018-04-12T14:00:20.416Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-12T14:00:20.417Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-cloud-functions-test-d1dbe/tokens  
+  
+ Thu Apr 12 2018 18:00:20 GMT+0400 (+04)
+[debug] [2018-04-12T14:00:21.176Z] <<< HTTP RESPONSE 200

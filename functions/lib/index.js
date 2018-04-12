@@ -3,10 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const functions = require("firebase-functions");
 // Start writing Firebase Functions
 // https://firebase.google.com/docs/functions/typescript
-exports.helloWorld = functions.https.onRequest((request, response) => {
-    const username = 'Rinat';
-    const greeter = thisusername => `Hello, ${thisusername}`;
-    console.log(greeter(username));
-    response.send(greeter(username));
+exports.sayThis = functions.https.onRequest((request, response) => {
+    let responseStrign = '';
+    const queryStringObject = request.query;
+    Object.keys(queryStringObject).forEach(key => (responseStrign += `${key} => ${queryStringObject[key]}\n`));
+    console.log(responseStrign);
+    response.send(responseStrign);
 });
 //# sourceMappingURL=index.js.map
